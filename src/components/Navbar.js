@@ -7,21 +7,21 @@ const Navbar = () => {
       <div className='nav-center'>
         <ul className='nav-links'>
           <li>
-            <span class='material-icons'>search</span>
+            <span className='material-icons'>search</span>
             Search
           </li>
           <li>
             <Link to='/basket'>
-              <span class='material-icons'>shopping_cart</span>Basket
+              <span className='material-icons'>shopping_cart</span>Basket
             </Link>
           </li>
           <li>
             <Link to='/favourite'>
-              <span class='material-icons'>favorite</span>Favorite
+              <span className='material-icons'>favorite</span>Favorite
             </Link>
           </li>
           <li>
-            <span class='material-icons'>account_circle</span>Log in
+            <span className='material-icons'>account_circle</span>Log in
           </li>
         </ul>
         <p className='logo'>

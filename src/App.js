@@ -10,6 +10,7 @@ import Liked from './components/Favourite';
 import ForMen from './components/ForMen';
 import ForWomen from './components/ForWomen';
 import Contacts from './components/Contacts';
+import Footer from './components/Footer';
 function App() {
   return (
     <Router>
@@ -37,6 +38,7 @@ function App() {
           <Contacts></Contacts>
         </Route>
       </Switch>
+      <Footer></Footer>
     </Router>
   );
 }
