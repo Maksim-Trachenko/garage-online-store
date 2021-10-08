@@ -189,23 +189,21 @@ span {
   margin: 0 auto;
   margin-top: 3rem;
 }
-.popular-models-image {
+.popular-models-images {
   display: flex;
   margin: 0 auto;
   width: 80%;
 }
-.popular-models-image img {
+.popular-models-images img {
   height: 100%;
   cursor: pointer;
 }
-.popular-image-btns {
-  margin: 0 auto;
+.material-icons {
+  font-size: 44px;
 }
-.popular-image-btns i {
-  display: inline-block;
-  font-size: 50px;
-  cursor: pointer;
-  margin: 0 1rem;
+.popular-btn-left,
+.popular-btn-right {
+  margin: auto 0;
 }
 /* 3 photos */
 .popular-images-grid {

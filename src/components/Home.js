@@ -17,7 +17,10 @@ const Home = () => {
       </div>
       <div className='popular-models'>
         <h1>The most popular models</h1>
-        <div className='popular-models-image'>
+        <div className='popular-models-images'>
+          <div className='popular-btn-left'>
+            <i class='material-icons'>chevron_left</i>
+          </div>
           <div className='popular-image first'>
             <img
               src='https://images.unsplash.com/photo-1618354691438-25bc04584c23?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=415&q=80'
@@ -36,11 +39,9 @@ const Home = () => {
               alt=''
             />
           </div>
-        </div>
-        <div className='popular-image-btns'>
-          <i class='material-icons'>chevron_left</i>
-
-          <i class='material-icons'>chevron_right</i>
+          <div className='popular-btn-right'>
+            <i class='material-icons'>chevron_right</i>
+          </div>
         </div>
         <div className='popular-images-grid'>
           <div className='popular-grid-photo-1'>
