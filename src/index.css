@@ -342,3 +342,38 @@ textarea:focus {
   outline: none;
   border-color: black;
 }
+/* FOR MEN page */
+.forMen-section {
+  display: flex;
+  align-items: flex-start;
+  max-width: var(--fullWidth);
+  justify-content: flex-start;
+  margin: 0 auto;
+}
+
+.forMen-title h1 {
+  font-size: 50px;
+}
+.categories-section {
+  margin-right: 7.4rem;
+}
+.category li {
+  margin: 0 0.8rem;
+  margin-bottom: 0.8rem;
+  cursor: pointer;
+  font-weight: lighter;
+  letter-spacing: 0.4px;
+}
+.forMen-section li:hover {
+  font-weight: bold;
+  color: var(--main);
+  letter-spacing: 0;
+}
+.forMen-element img {
+  height: 100%;
+  width: 200px;
+}
+.forMen-element {
+  display: inline-block;
+  margin-right: 3rem;
+}

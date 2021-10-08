@@ -19,7 +19,7 @@ const Home = () => {
         <h1>The most popular models</h1>
         <div className='popular-models-images'>
           <div className='popular-btn-left'>
-            <i class='material-icons'>chevron_left</i>
+            <i className='material-icons'>chevron_left</i>
           </div>
           <div className='popular-image first'>
             <img
@@ -40,7 +40,7 @@ const Home = () => {
             />
           </div>
           <div className='popular-btn-right'>
-            <i class='material-icons'>chevron_right</i>
+            <i className='material-icons'>chevron_right</i>
           </div>
         </div>
         <div className='popular-images-grid'>
