@@ -29,8 +29,8 @@ body {
   line-height: 1.4;
   font-size: 1rem;
   font-weight: 300;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
 }
 h1,
 h2,
@@ -231,11 +231,11 @@ span {
   height: 616px;
 }
 /* FOOTER */
-
 .footer {
   padding-bottom: 2rem;
   display: grid;
   place-items: center;
+  min-height: 50px;
 }
 .footer-links {
   padding: 1.5rem;
@@ -269,4 +269,78 @@ span {
   border: 1px solid black;
   border-radius: 4px;
   margin-top: 2rem;
+}
+/* CONTACTS */
+.contact-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  max-width: var(--fullWidth);
+  margin: 0 auto;
+}
+.contact-text {
+  margin-bottom: 9.2rem;
+}
+.contact-container h2 {
+  text-align: left;
+  margin-bottom: 2rem;
+}
+.form-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+}
+.form-group {
+  margin-bottom: 1.5rem;
+}
+.form-label {
+  display: block;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+.form-input {
+  margin-top: 0.5rem;
+  box-shadow: none;
+  border: 2px;
+  border-color: var(--main);
+  border-style: none none solid none;
+  width: 100%;
+  font-size: 1rem;
+  padding: 0.3rem 0;
+  font-weight: lighter;
+}
+.form-input:focus {
+  box-shadow: none;
+  outline: none;
+  border-color: black;
+  font-weight: lighter;
+}
+.form-btn {
+  border-style: none;
+  padding: 0.5rem;
+  font-size: 1rem;
+  transition: all 0.5s ease 0s;
+  text-transform: lowercase;
+  background-color: var(--white);
+  color: var(--black);
+}
+.form-btn:hover {
+  border: 1px black;
+  border-style: solid;
+  cursor: pointer;
+}
+.form-btn:focus {
+  font-weight: lighter;
+}
+textarea {
+  resize: none;
+  border: none;
+  border-bottom: 1px solid var(--main);
+  font-size: 1rem;
+  font-family: var(--font);
+}
+textarea:focus {
+  outline: none;
+  border-color: black;
 }
