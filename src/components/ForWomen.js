@@ -1,8 +1,12 @@
 import React from 'react';
+import ClothingList from '../items/ClothingList';
 import { Link } from 'react-router-dom';
 
-const FormWomen = () => {
-  return <h2>FormWomen Garage!</h2>;
+const data = {
+  name: 'For Women',
 };
-
-export default FormWomen;
+const ForWomen = () => {
+  const title = data;
+  return <ClothingList {...title} />;
+};
+export default ForWomen;
