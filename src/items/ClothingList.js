@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const ClothingList = () => {
+const ClothingList = ({ name }) => {
   return (
     <section className='forMen-section'>
       <aside className='categories-section'>
@@ -14,7 +14,7 @@ const ClothingList = () => {
       </aside>
       <article className='forMen-clothing-section'>
         <div className='forMen-title'>
-          <h1>For Men</h1>
+          <h1>{name}</h1>
           <p>T-shirts</p>
         </div>
         <main className='forMen-catalogue'>
