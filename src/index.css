@@ -22,6 +22,12 @@
   padding: 0;
   box-sizing: border-box;
 }
+#root {
+  display: grid;
+  height: 100vh;
+  justify-content: center;
+  grid-template-rows: 1fr 8fr 1fr;
+}
 body {
   font-family: var(--font);
   color: var(--black);
@@ -230,7 +236,8 @@ span {
 }
 /* FOOTER */
 .footer {
-  padding-bottom: 2rem;
+  align-self: end;
+  padding-bottom: 0.3rem;
   display: grid;
   place-items: center;
   min-height: 50px;
@@ -259,7 +266,7 @@ span {
   text-justify: inter-word;
 }
 .about-section img {
-  height: 100%;
+  height: 80%;
   width: 80%;
   cursor: pointer;
 }
@@ -275,13 +282,15 @@ span {
   justify-content: space-evenly;
   max-width: var(--fullWidth);
   margin: 0 auto;
+  margin-bottom: 3rem;
 }
 .contact-text {
   margin-bottom: 9.2rem;
+  margin-right: 10rem;
 }
 .contact-container h2 {
   text-align: left;
-  margin-bottom: 2rem;
+  margin-bottom: 0.7rem;
 }
 .form-page {
   display: flex;
@@ -369,6 +378,9 @@ textarea:focus {
   color: var(--main);
   letter-spacing: 0;
 }
+.forMen-title {
+  margin-bottom: 1rem;
+}
 .forMen-element img {
   height: 100%;
   width: 200px;
@@ -376,4 +388,118 @@ textarea:focus {
 .forMen-element {
   display: inline-block;
   margin-right: 3rem;
+}
+/* BASKET */
+.basket-section {
+  max-width: var(--fullWidth);
+  margin: 0 10rem;
+  margin-bottom: 3rem;
+}
+.basket-items {
+  display: inline-block;
+}
+.basket-item {
+  display: flex;
+  flex-direction: row;
+
+  width: 35rem;
+  height: 200px;
+  margin-bottom: 2.5rem;
+  box-shadow: 2px 2px 10px rgb(207, 204, 204);
+}
+.basket-title {
+  font-size: 2rem;
+}
+.basket-item-text {
+  padding-top: 1rem;
+  padding: 1rem;
+}
+.basket-item-icons {
+  text-align: right;
+  padding: 0.5rem;
+}
+.basket-item-text h3 {
+  font-size: 1rem;
+  margin-bottom: 0.8rem;
+}
+.basket-item-text p {
+  margin-bottom: 1.2rem;
+  color: var(--main);
+}
+.basket-item img {
+  height: 200px;
+  width: 170px;
+}
+.basket-item-text li {
+  font-size: 0.85rem;
+  padding-right: 4rem;
+}
+.basket-item-text ul {
+  display: flex;
+  justify-content: space-between;
+}
+/* purchase table */
+.basket-purchase {
+  display: inline-block;
+  position: fixed;
+  margin-left: 0.8rem;
+  width: 300px;
+  padding: 1.2rem;
+  box-shadow: 2px 2px 10px rgb(207, 204, 204);
+}
+
+.basket-purchase-first,
+.basket-purchase-second,
+.basket-purchase-third {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+.basket-division {
+  color: var(--black);
+  width: 100px;
+  height: 1px;
+}
+.total-price {
+  display: flex;
+  justify-content: space-between;
+}
+.total-price:last-child {
+  margin-right: 1.1rem;
+}
+.basket-purchase-btn {
+  display: block;
+  font-weight: 200;
+  color: var(--white);
+  background-color: var(--main);
+  border: 1px solid transparent;
+  border-radius: 2px;
+  padding: 0.5rem;
+  width: 100%;
+  font-size: 0.8rem;
+  letter-spacing: 0.1rem;
+}
+.basket-purchase-btn:hover {
+  cursor: pointer;
+}
+/* list styling */
+.first-upper-el {
+  font-weight: bold;
+}
+.first-upper-el2 {
+  font-size: 0.7rem;
+  align-self: flex-end;
+}
+.second-upper-el,
+.third-upper-el {
+  font-size: 0.85rem;
+}
+.second-upper-el2,
+.third-upper-el2 {
+  font-size: 0.85rem;
+  font-weight: bold;
+}
+.total-price p {
+  font-weight: bold;
+  margin: 1rem 0;
 }
